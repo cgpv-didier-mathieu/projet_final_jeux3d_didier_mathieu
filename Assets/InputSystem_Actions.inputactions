@@ -45,6 +45,36 @@
                     "interactions": "",
                     "initialStateCheck": true,
                     "priority": 0
+                },
+                {
+                    "name": "DeplacerSouris",
+                    "type": "Value",
+                    "id": "3c83d2c2-1795-4413-b03f-38ea0d75e1e7",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true,
+                    "priority": 0
+                },
+                {
+                    "name": "ClicGauche",
+                    "type": "Button",
+                    "id": "546067b1-c166-4f18-9082-179c91be602d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "ClicDroit",
+                    "type": "Button",
+                    "id": "df96162c-96c2-40f8-b33d-95fde447993c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
                 }
             ],
             "bindings": [
@@ -201,6 +231,39 @@
                     "action": "ZoomerCamera",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "4a762354-6a14-46a4-a13d-01f640f89723",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DeplacerSouris",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7161e8e6-5694-4082-b9ab-b86e43fccc71",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ClicGauche",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8d999535-b4ce-4e9a-918b-b3bb3b826c8b",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ClicDroit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
