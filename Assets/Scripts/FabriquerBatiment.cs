@@ -9,12 +9,22 @@ using UnityEngine.UI;
 /// </summary>
 public class FabriquerBatiment : MonoBehaviour
 {
-    [SerializeField, Tooltip("Le prefab du batiment à instancier")]
     private GameObject prefabBatiment;
 
     private GameObject batimentEnPlacement;
 
     private GestionnaireJeu gestionnaireJeu;
+
+    private void Awake()
+    {
+        prefabBatiment = null;
+    }
+
+    public void AssignerBatimentPrefab(GameObject prefab)
+    {
+        prefabBatiment = prefab;
+        CommencerPlacement();
+    }
 
     private void Start()
     {
