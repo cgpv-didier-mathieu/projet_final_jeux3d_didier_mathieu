@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// Pour l'instant, provient entièrement des notes de cours. Va probablement changer, sinon changer danas emprunter...
+/// </summary>
 public class GestionnaireJeu : MonoBehaviour
 {
     public static GestionnaireJeu Instance { get; private set; }
